@@ -1,0 +1,337 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Les tests d’acception &mdash; Documentation POEI Apside </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_rtd_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="prev" title="Sommaire" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> POEI Apside
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Recherche dans les pages" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Les tests d'acceptation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Les tests d’acception</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#recette-fonctionnelle">Recette fonctionnelle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test-d-acceptation-agile">Test d’acceptation agile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notion-de-cas-de-test">Notion de cas de test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scenario-de-test">Scénario de test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rapport-de-test">Rapport de test</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">POEI Apside</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Accueil</a> &raquo;</li>
+        
+      <li>Les tests d’acception</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Sommaire" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="les-tests-d-acception">
+<h1>Les tests d’acception<a class="headerlink" href="#les-tests-d-acception" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Quelle que soit la méthode de développement retenue pour développer une solution
+logicielle, il est toujours nécessaire d’effectuer la <strong>qualification</strong> du produit.
+La qualification correspond à toutes activités réalisées pour vérifier qu’un
+système logiciel est conforme aux attentes.</p>
+<p>Les <strong>tests d’acceptation</strong> s’inscrivent dans une démarche de qualification pour
+déterminer si le produit est conforme dans son utilisation aux objectifs fixés.
+Il s’agit d’une description formelle du comportement d’un logiciel sous la forme
+d’un scénario.</p>
+<div class="section" id="recette-fonctionnelle">
+<h2>Recette fonctionnelle<a class="headerlink" href="#recette-fonctionnelle" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Dans l’approche de gestion de projet, la recette fonctionnelle (ou plus simplement la recette)
+est une des phases du développement logiciel. Son objectif est d’attester
+que le contrat entre MOA/MOE a bien été respecté par la réalisation de sessions
+de test.</p>
+<p>La recette fonctionnelle est un moyen de vérification de la conformité d’un SI
+livré par rapport aux spécifications émises par la MOA. Les tests d’acceptation
+(souvent appelés tests fonctionnels) servent à réaliser cette vérification.</p>
+</div>
+<div class="section" id="test-d-acceptation-agile">
+<h2>Test d’acceptation agile<a class="headerlink" href="#test-d-acceptation-agile" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Dans une approche agile, le produit est le plus souvent découpé en <em>user stories</em>. Chaque
+<em>user story</em> doit être testable, c’est-à-dire qu’elle définit ses critères d’acceptation.
+Un test d’acceptation aide donc à la fois, à comprendre la finalité d’une <em>user story</em>
+mais également à vérifier, après son implémentation, que la réalisation est conforme
+à ce qui a été défini.</p>
+<p>Dans une approche agile, l’acceptation d’une <em>user story</em> fait partie intégrante de son
+cycle de vie est intervient dans la même itération que son développement.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L’eXtreme Programming propose une approche <a class="reference external" href="https://www.agilealliance.org/glossary/atdd/">ATTD</a> (<em>Acceptance Test Driven Development</em>).
+Il s’agit de définir les tests d’acceptation avant le développement d’une <em>user story</em>
+de manière à guider les développements au plus près des attentes des utilisateurs.</p>
+<p>Gojko Adzic dans son ouvrage <a class="reference external" href="https://gojko.net/books/specification-by-example/">Specification by Examples</a>
+propose de revoir la façon de spécifier un logiciel en utilisant pour cela une
+série d’exemples qui correspondent de fait à des tests d’acceptation.</p>
+</div>
+</div>
+<div class="section" id="notion-de-cas-de-test">
+<h2>Notion de cas de test<a class="headerlink" href="#notion-de-cas-de-test" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Un cas de test désigne une interaction avec le système destinée à produire un résultat attendu.</p>
+<p>Un cas de test est généralement décrit par son titre. Il contient une liste d’étapes
+à réaliser. Chaque étape doit correspondre à une action de l’utilisateur et s’accompagne
+d’un résultat attendu (et si possible un seul). Le résultat attendu doit être
+explicité clairement et ne doit pas être interprétable.</p>
+<p>Il faut limiter le nombre d’étapes d’un cas de test pour en réduire sa complexité.
+Entre chaque étape, il ne peut pas y avoir de choix ou d’alternative laisser au
+testeur (faire ceci ou cela). La succession des étapes doit être non ambiguë.</p>
+<blockquote>
+<div><p><strong>Cas de test</strong> : afficher son profil utilisateur</p>
+<blockquote>
+<div><p><strong>Étape</strong> : Sélectionner le menu utilisateur</p>
+<p><strong>Résultat attendu</strong> : Le menu s’affiche et contient l’entrée « Profil »</p>
+<p><strong>Étape</strong> : Sélectionner l’entrée « Profil »</p>
+<p><strong>Résultat attendu</strong> : Le détail du profil s’affiche dans une popup
+avec le nom, le prénom et la photo, les boutons « modifier » et
+« fermer » sont visibles et cliquables.</p>
+</div></blockquote>
+<p><strong>Cas de test</strong> : éditer le profil utilisateur</p>
+<blockquote>
+<div><p><strong>Étape</strong> : Cliquer sur le bouton « modifier »</p>
+<p><strong>Résultat attendu</strong> : Les champs nom et prénom deviennent éditables, le bouton « modifier »
+disparaît et le bouton « sauvegarder » apparaît.</p>
+<p><strong>Étape</strong> : Modifier le nom du profil</p>
+<p><strong>Résultat attendu</strong> : Le champ est mis à jour</p>
+</div></blockquote>
+<p><strong>Cas de test</strong> : sauver le profil utilisateur</p>
+<blockquote>
+<div><p><strong>Étape</strong> : Cliquer sur le bouton « sauvegarder »</p>
+<p><strong>Résultat attendu</strong> : Les champs nom et prénom ne sont plus éditables.
+Un message confirme que le profil a bien été enregistré.</p>
+</div></blockquote>
+<p><strong>Cas de test</strong> : annuler la modification du profil utilisateur</p>
+<blockquote>
+<div><p><strong>Étape</strong> : Cliquer sur le bouton « fermer »</p>
+<p><strong>Résultat attendu</strong> : La popup du profil utilisateur se ferme.</p>
+</div></blockquote>
+</div></blockquote>
+<p>Il ne faut pas croire qu’il existerait objectivement un niveau idéal de rédaction
+pour les cas d’utilisation. Il est nécessaire d’avoir une idée du profil des
+personnes qui seront chargées d’effectuer les tests et de valider chaque étape. Le niveau
+de rédaction nécessaire est donc largement dépendant de l’équipe qui participera
+aux sessions de test. S’il s’agit d’une équipe spécialisée pour la réalisation
+des tests mais n’ayant que très peu d’implication dans le développement du système,
+alors les cas de tests devront être extrêmement détaillés pour guider au mieux les testeurs.
+<em>A contrario</em>, si les personnes réalisant les tests travaillent quotidiennement
+avec les développeurs et/ou les experts du domaine, les cas de test pourront
+contenir des termes propres au domaine de l’application et synthétiser plus
+facilement chaque étape en profitant d’un savoir commun de l’ensemble de l’équipe.
+De même, pour les personnes en charge de participer aux sessions de test, il
+faut tenir compte du savoir-faire technique dans la rédaction des cas de tests:
+l’ambiguïté d’un cas de test peut reposer sur une asymétrie des savoirs techniques
+entre le rédacteur et le testeur. Par exemple, si une étape d’un cas de test
+nécessite de vérifier le code retour d’un programme, le testeur doit avoir une
+idée de ce qu’est un code retour et comment l’obtenir.</p>
+</div>
+<div class="section" id="scenario-de-test">
+<h2>Scénario de test<a class="headerlink" href="#scenario-de-test" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Un scénario de test est le regroupement de cas de test. Alors qu’un cas
+de test représente une interaction limitée avec le système, un scénario représente
+la réalisation d’une fonctionnalité complète.</p>
+<p>Un ensemble de scénario permet de s’assurer qu’une fonctionnalité fournie est
+conforme aux exigences (méthode de gestion de projet) ou à la <em>user story</em> (méthode agile).</p>
+<blockquote>
+<div><p><strong>Scénario</strong> : Modification du profil utilisateur</p>
+<blockquote>
+<div><p><strong>Cas de test</strong> : afficher son profil utilisateur</p>
+<p><strong>Cas de test</strong> : éditer le profil utilisateur</p>
+<p><strong>Cas de test</strong> : sauver le profil utilisateur</p>
+</div></blockquote>
+<p><strong>Scénario</strong> : Annuler la modification du profil utilisateur</p>
+<blockquote>
+<div><p><strong>Cas de test</strong> : afficher son profil utilisateur</p>
+<p><strong>Cas de test</strong> : éditer le profil utilisateur</p>
+<p><strong>Cas de test</strong> : annuler la modification du profil utilisateur</p>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="rapport-de-test">
+<h2>Rapport de test<a class="headerlink" href="#rapport-de-test" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Une session de test produit un rapport de test. Ce document atteste du succès
+ou de l’échec des scénarios de test.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Sommaire" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright David Gayerie - david.gayerie@epsi.fr - CC-BY-SA
+
+    </p>
+  </div>
+    <div>Téléchargez ce support au format <a class="reference download" href="https://spoonless.github.io/poei_apside/archive/gh-pages.zip">HTML</a>
+    </div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
